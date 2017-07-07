@@ -1,0 +1,166 @@
+$icon-font-path: '../fonts/';
+h1, h2, h3, h4, h5, p, a, li {
+  font-family: 'Lato', arial, sans-serif!important;
+}
+//video bg
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+//END video bg
+
+//header
+
+.navbar-default {
+  border-color: transparent!important;
+  background-color: transparent!important;
+  li {
+    a {
+      color: #333!important;
+      text-transform: uppercase;
+    }
+  }
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+  h2 {
+    margin: 0;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+}
+
+//END header
+
+
+//landing page
+.landing-cta {
+  margin-top: 75px;
+  h1 {
+    font-size: 48px;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: 100;
+  }
+  .btn {
+    margin-top: 50px;
+    font-size: 22px;
+    padding: 10px 44px;
+    background-color: #FBEC5D;
+    border-color: #FBEC5D;
+    color: #333;
+    &:hover, &:focus, &:active {
+      background-color: #FCDC3B!important;
+      border-color: #FCDC3B!important;
+      color: #333!important;
+    }
+  }
+}
+
+//END landing page
+
+//work history
+
+.parallax-image {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 25px;
+  h1 {
+    font-size: 100px;
+    font-weight: 100;
+  }
+}
+.light {
+  color: #fff;
+}
+.dark {
+  color: #333;
+}
+.job-desc {
+  padding: 100px 0;
+}
+.moonfruit-bg {
+  background-image: url('/images/nasa-80968.jpg');
+}
+.bcsg-bg {
+  background-image: url('/images/christopher-burns-227941.jpg');
+}
+.mso-bg {
+  background-image: url('/images/jeff-cooper-106565.jpg');
+}
+.disney-bg {
+  background-image: url('/images/thomas-kelley-91838.jpg');
+}
+
+//END work history
+
+//porfolio
+
+.portfolio {
+  padding: 100px 0 70px;
+  img {
+    width: 100%;
+    height: 204px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-weight: 100;
+    font-size: 48px;
+  }
+  &:nth-child(odd) {
+    background-color: #333;
+    color: #fff;
+    h2 {
+      color: #fff;
+    }
+  }
+}
+
+//END portfolio
